@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="webkit.css" />
+  </head>
+  <body>
+    <!--
+    <div class="loading-screen" id="loadingScreen">
+       Replace 'your-logo.svg' with the path to your SVG logo 
+      <img src="./assets/logo.png" alt="Loading..." class="loading-logo wobble-hor-bottom">
+    </div> -->
+    <nav id="desktop-nav">
+      <a href="#profile" class="logo-link">
+        <div class="logo">
+          X
+        </div>
+      </a>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="vibrate-2"><a href="#" onclick="toggleDarkMode()">Dark Mode</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <a href="#profile" class="logo-link">
+        <div class="logo">
+          X
+        </div>
+      </a>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li class="vibrate-2"><a href="#" onclick="toggleDarkMode()">Dark Mode</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile" class="animated-section">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Xeth Watin profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <div class="typing-text">
+          <h1 class="typing-text__content">Xeth Watin</h1>
+        </div>                   
+        <p class="section__text__p2">Graphic Designer | Video Editor</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon icon-socials light-mode"
+            onclick="location.href='https://facebook.com/wxeth/'"
+          />
+          <img
+            src="./assets/linkedin-dark.png"
+            alt="My LinkedIn profile"
+            class="icon icon-socials dark-mode"
+            onclick="location.href='https://facebook.com/wxeth/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon icon-socials light-mode"
+            onclick="location.href='https://github.com/xiiixth'"
+          />
+          <img
+            src="./assets/github-dark.png"
+            alt="My Github profile"
+            class="icon icon-socials dark-mode"
+            onclick="location.href='https://github.com/xiiixth'"
+          />
+        </div>
+      </div>
+      
+    </section>
+    <section id="about" class="animated-section">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="My experience"
+                class="icon icon-socials light-mode"
+              />
+              <img
+                src="./assets/experience-dark.png"
+                alt="My experience"
+                class="icon icon-socials dark-mode"
+              />
+              <h3>Experience</h3>
+              <p>1 year <br />Frontend Development</p>
+                <p><br>
+                  <div class="text-container">
+                  As an IT student, I'm driven by my passion for crafting innovative systems that streamline tasks and simplify the lives of individuals.
+                  While I may not consider myself creative, I pursue learning and continuously strive to broaden my horizons. My journey hasn't always 
+                  been rooted in technology; I initially pursued a different path. However, with the unwavering support of those closest to me, I overcame my reservations 
+                  about changing directions, leading me to where I stand today.
+                  </div>
+                </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="My education"
+                class="icon icon-socials light-mode"
+              />
+              <img
+                src="./assets/education-dark.png"
+                alt="My education"
+                class="icon icon-socials dark-mode"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Science<br />Information Technology</p>
+                <p><br>
+                  <div class="text-container">
+                  My aspiration is to excel as a professional web developer and IT specialist, encompassing the vast realm of information technology. This vision fuels my 
+                  ambitions and shapes my dreams. Setting aside the sentimental aspects, I thrive on exploring new territories, even those that may not align perfectly with 
+                  my immediate interests. However, my true forte emerges when I'm immersed in projects that captivate my passion. Time, I've learned, is an invaluable ingredient 
+                  for delivering quality work. Given sufficient hours, days, weeks, or even months, I excel in producing exceptional outcomes.
+                  </div>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience" class="animated-section">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="section__text__p2">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <div class="text-container">
+                <p>
+                  In my journey through frontend development, I've gained a strong grasp of HTML and CSS. However, I'm continually expanding my knowledge in JavaScript, a versatile language 
+                  with powerful interactive features. My aim is to achieve a deeper understanding and proficiency in JavaScript, recognizing that learning in this field is a constant process.
+                  My focus in frontend development centers on blending these languages seamlessly to create user-friendly experiences. I prioritize the fusion of design and functionality, 
+                  striving to build interfaces that captivate users while delivering intuitive navigation.
+                  <br><br>
+                  My passion for frontend development lies in harmonizing these languages to construct seamless, user-centric experiences. With a keen eye for design and a growing arsenal of 
+                  coding prowess, I strive to weave together aesthetics and functionality, creating captivating and intuitive interfaces. Determined to excel in this field, I stay updated on 
+                  the latest trends and techniques in frontend development. My goal is to evolve into a skilled and adaptable frontend developer capable of translating concepts into engaging digital platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="section__text__p2">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>C Language</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>Networking</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <div class="text-container">
+                <p>
+                  In backend development, I've gained solid expertise in programming languages like C and Java, along with a strong understanding of Object-Oriented Programming (OOP) principles.
+                  My proficiency in C and Java enables me to create efficient and adaptable systems. Using OOP, I design solutions that are both functional and easy to maintain.
+                  <br><br>
+                  Moreover, I have knowledge in networking, a crucial aspect of backend development. This understanding helps me build systems that communicate effectively, ensuring smooth 
+                  connectivity and optimal performance. My goal in backend development is to apply this knowledge to build secure and reliable systems. By staying updated with the latest advancements in networking and backend 
+                  development, I aim to grow as a capable backend developer capable of creating resilient and sophisticated systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-dark.png"
+        data-dark-src="./assets/arrow-dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills" class="animated-section">
+      <p class="section__text__p1">See my</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="section__text__p2">Graphics</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>Canva</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>Adobe Photshop</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>Website Makers</h3>
+                  <p>Light experience</p>
+                </div>
+              </article>
+              <div class="text-container">
+                <p>
+                  In my journey through frontend development, I've gained a strong grasp of HTML and CSS. However, I'm continually expanding my knowledge in JavaScript, a versatile language 
+                  with powerful interactive features. My aim is to achieve a deeper understanding and proficiency in JavaScript, recognizing that learning in this field is a constant process.
+                  My focus in frontend development centers on blending these languages seamlessly to create user-friendly experiences. I prioritize the fusion of design and functionality, 
+                  striving to build interfaces that captivate users while delivering intuitive navigation.
+                  <br><br>
+                  My passion for frontend development lies in harmonizing these languages to construct seamless, user-centric experiences. With a keen eye for design and a growing arsenal of 
+                  coding prowess, I strive to weave together aesthetics and functionality, creating captivating and intuitive interfaces. Determined to excel in this field, I stay updated on 
+                  the latest trends and techniques in frontend development. My goal is to evolve into a skilled and adaptable frontend developer capable of translating concepts into engaging digital platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="section__text__p2">Video</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>Adobe Premiere</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials light-mode"
+                />
+                <img
+                  src="./assets/checkmark-dark.png"
+                  alt="Experience icon"
+                  class="icon icon-socials dark-mode"
+                />
+                <div>
+                  <h3>Capcut</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <div class="text-container">
+                <p>
+                  In backend development, I've gained solid expertise in programming languages like C and Java, along with a strong understanding of Object-Oriented Programming (OOP) principles.
+                  My proficiency in C and Java enables me to create efficient and adaptable systems. Using OOP, I design solutions that are both functional and easy to maintain.
+                  <br><br>
+                  Moreover, I have knowledge in networking, a crucial aspect of backend development. This understanding helps me build systems that communicate effectively, ensuring smooth 
+                  connectivity and optimal performance. My goal in backend development is to apply this knowledge to build secure and reliable systems. By staying updated with the latest advancements in networking and backend 
+                  development, I aim to grow as a capable backend developer capable of creating resilient and sophisticated systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-dark.png"
+        data-dark-src="./assets/arrow-dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects" class="animated-section">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https:github.com/xiiixth/', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://xiiixth.github.io/cafegnocchi/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Graphics</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://drive.google.com/drive/folders/1vs9IE9uTrmfcR8fOqJTJF8XQXH6BbrWU?usp=sharing', '_blank')"
+              >
+                Check out
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Video</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://www.youtube.com/watch?v=JdU9gEcAcIY&ab_channel=XethWatin', '_blank')"
+              >
+                View Video
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact" class="animated-section">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon light mode"
+            class="icon icon-socials light-mode"
+            onclick="window.open('mailto:xethwatin.mail@gmail.com')"
+          />
+          <img
+            src="./assets/email-dark.png"
+            alt="Email icon dark mode"
+            class="icon icon-socials dark-mode"
+            onclick="window.open('mailto:xethwatin.mail@gmail.com')"
+          />
+          <p><a href="mailto:xethwatin.mail@gmail.com">xethwatin.mail@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon icon-socials light-mode"
+            onclick="window.open('tel:+639927703998', '_blank')"
+          />
+          <img
+            src="./assets/phone-dark.png"
+            alt="Phone icon"
+            class="icon icon-socials dark-mode"
+            onclick="window.open('tel:+639927703998', '_blank')"
+          />
+          <p><a href="tel:+639927703998">+63 992 770 3998</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Xeth Watin. All Rights Reserved.</p>
+    </footer>
+
+    <div id="dark-mode-icon" class="dark-mode-icon" onclick="toggleDarkMode()">
+      <img src="./assets/moon.png" alt="Dark Mode Icon" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
